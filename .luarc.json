@@ -1,0 +1,11 @@
+{
+  "runtime.version": "LuaJIT",
+  "diagnostics.globals": ["vim"],
+  "workspace.checkThirdParty": false,
+  "telemetry.enable": false,
+  "workspace.library": [
+    "/usr/share/nvim/runtime/lua",
+    "/home/lizi/.local/share/nvim/lazy/lazy.nvim/lua"
+  ],
+    "completion.autoRequire": false
+}
