@@ -9,7 +9,6 @@ require("config.options")
 require("config.keymaps")
 require("config.autocmds")
 
--- lazy.nvim 自动安装引导
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.fn.system({
@@ -23,7 +22,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- 初始化 lazy.nvim（暂无插件，仅初始化）
 require("lazy").setup({
     spec = { import = "plugins" },
     rocks = { enabled = false },

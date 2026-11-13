@@ -1,6 +1,4 @@
 return {
-    -- { dir = "~/projects/toggleterm.nvim/" },
-    -- { dir = "/home/lizi/projects/toggleterm.nvim" },
     "akinsho/toggleterm.nvim",
     version = false,
     lazy = false,
@@ -14,8 +12,6 @@ return {
     },
     opts = {
         on_open = function(term)
-            -- vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { buffer = term.bufnr, desc = "Exit terminal mode" })
-            -- vim.keymap.set("t", "jk", "<C-\\><C-n>", { buffer = term.bufnr, desc = "Exit terminal mode" })
         end,
         size = function(term)
             if term.direction == "vertical" then
@@ -49,9 +45,6 @@ return {
         },
 
 
-        -- responsiveness = {
-        --     horizontal_breakpoint = 135,
-        -- },
     },
     vim.keymap.set("v", "<leader>s", "<cmd>ToggleTermSendVisualSelection<CR>"),
     vim.keymap.set("n", "<leader>tn", "<cmd>TermNew<CR>"),
